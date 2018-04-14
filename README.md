@@ -1,6 +1,6 @@
 # gRPC minimal examples
 
-----
+---
 
 ### What is this?
 
@@ -19,7 +19,7 @@ The mentioned 4 types of calls are:
  - many-requests-to-one-response "client streaming" call
  - many-requests-to-many-responses "bidirectional streaming" call
 
---
+---
 
 ### What's inside?
 
