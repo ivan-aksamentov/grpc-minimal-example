@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option java_package = "com.example.grpc.minimal";
+option objc_class_prefix = "GRPCMinimal";
+
+package grpc_minimal;
+
+// Defines a gRPC service that showcases 4 possible call types
+service GRPCMinimal {
+    // Unary call
+    rpc one_to_one (Request) returns (Reply) {}
+
+    // Server streaming
+    rpc one_to_many (Request) returns (stream Reply) {}
+
+    // Client streaming
+    rpc many_to_one (stream Request) returns (Reply) {}
+
+    // Bidirectional streaming
+    rpc many_to_many (stream Request) returns (stream Reply) {}
+}
+
+// Request object definition
+// (sent from client, received on server)
+message Request {
+    string name = 1;
+    int32 n = 2;
+}
+
+// Reply object definition
+// (sent from server, received on client)
+message Reply {
+    string message = 1;
+}
+

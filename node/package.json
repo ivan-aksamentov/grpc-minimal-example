@@ -1,0 +1,44 @@
+{
+  "name": "grpc-minimal-example",
+  "version": "1.0.0",
+  "description": "Minimal gRPC example in Node.js (ES6+)",
+  "main": "api/main.js",
+  "scripts": {
+    "dev-server": "nodemon --watch ./ --exec babel-node server.js",
+    "dev-client": "nodemon --watch ./ --exec babel-node client.js",
+    "server": "babel-node server.js",
+    "client": "babel-node client.js"
+  },
+  "engines": {
+    "node": "^8.11.0",
+    "npm": "^5.7.1",
+    "yarn": "^1.5.1"
+  },
+  "keywords": [
+    "grpc",
+    "nodejs"
+  ],
+  "contributors": [
+    {
+      "name": "Ivan Aksamentov",
+      "email": "ivan.aksamentov@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/node": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.44",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/runtime": "^7.0.0-beta.44",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^5.0.0-alpha.0",
+    "google-protobuf": "^3.5.0",
+    "grpc": "^1.10.1",
+    "lodash": "^4.17.5",
+    "nodemon": "^1.17.3"
+  }
+}
