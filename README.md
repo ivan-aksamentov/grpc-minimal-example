@@ -1,6 +1,5 @@
 # gRPC minimal examples
 
----
 
 ### What is this?
 
